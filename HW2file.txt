@@ -1,0 +1,143 @@
+1. Given the following
+
+$ cat echo
+$ echo cat
+
+Explain the differences between the above two commands.
+
+The cat is short for “concatenate”. It was originally designed to merge text files 	into one, but can be used for many other purposes.
+	
+Here, it display contains of the echo file (text in the file). If it is not present, the command would output “cat: echo: No such file or directory”
+
+The echo command displays the specified text on the screen. Specified string, which displays after the echo command would be printed by the echo command.
+Here, echo cat command outputs cat.
+
+2. Evaluate the following
+
+$ pwd # your current position
+/usr/bin
+
+Write a command to change directory to /home/staff/john/project using relative pathname from /usr/bin
+
+cd /home/staff/john/project
+
+Write a command to change directory from /usr/bin to /tmp using full pathname
+
+cd /tmp
+
+3. What is vi ? Explain.
+
+vi is a screen-oriented default text editor originally created for the Unix operating system. It uses the keyboard and provides a very efficient interface for editing programs and scripts.
+
+4. What are hidden files ? Explain with an example
+
+A hidden file is a file that file system utilities do not display by default when it  displays directory listing. It is usually used for storing user preferences or preserving the state of a utility.
+Those files are created implicitly by using various utilities but it is not a security mechanism because access is not restricted. It helps to prevent important data from being accidentally deleted misplaced.
+In linux systems, hidden file name starts with dot such as “.cache”. 
+
+For an instance, 
+Consider there is file called myfile.txt and when the ls command is executed it gives following output.
+
+$ ls
+myfile.txt
+
+If we want to hide this file, rename file starting file name with dot. Following shows how to do it,
+
+	$ mv myfile.txt .myfile.txt
+
+when the ls command is executed it output nothing because file has been hidden. If we want to display we need to use following command.
+
+	$ ls -a
+.  ..  .myfile.txt
+
+Likewise, we can hide any file that we want.
+
+5. Explain the command head with an example.
+
+The head command prints the first N number of data of the given file or standard input if the N given. The head command prints the first 10 lines of each FILE to standard output by default. With head command More than one FILE can be used and it precedes each set of output with a header identifying the file name. If file is not specified, or when file is specified as a dash (-), head command reads ten inputs from standard input
+
+For an example, there is file name as first.txt, which contains numbers consecutively in new line from 1 to 20.
+
+Then the head command execution gives following,
+
+	$ head first.txt 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Number of lines has not been given. Hence, it prints 10 outputs. If n is mentioned like following,
+
+	$ head -15 first.txt 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+Consider following example, it has used two files with head.
+
+$ head first.txt second.txt 
+==> first.txt <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+==> second.txt <==
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+If file is not specified with the head command or used “-” it reads stdin. Following shows an example that has not been used number of lines,
+
+$ head
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+9
+9
+10
+10

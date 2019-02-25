@@ -1,0 +1,38 @@
+1. 
+command:
+egrep '^[^0-9]+$' file
+
+output:
+file
+filea
+fileb
+filec
+FILEd
+filee
+fiLEf
+fileg
+FILEh
+
+2. 
+command:
+grep 'FILE$' file
+
+output:
+FILE
+12345FILE
+
+3.
+command:
+egrep "^[^A-Z]*[A-Z]{2}[^A-Z]*$" file
+
+output:
+FIled123
+fileXX
+
+4.
+command:
+egrep -x '[0-9]+' file
+
+output:
+1234
+567

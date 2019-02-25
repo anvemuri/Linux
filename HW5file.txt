@@ -1,0 +1,12 @@
+
+1a.	ls ~/*.d
+
+1b.	ls /etc/*.sh
+
+1c. ls temp/ | grep -Ev '.(d)$'
+
+2a.	$HOME/find.out.txt 2> find.err/tmp.txt
+
+2b.	The ps command is used 
+
+ps-A

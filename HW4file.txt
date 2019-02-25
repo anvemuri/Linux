@@ -1,0 +1,9 @@
+1a. chmod g-x ./homework
+
+1b. chmod u=rw,g=x,o=w ./homework
+
+2a. find $HOME –type d
+
+2b. find /dev –type c
+
+3. dirname is used to return the directory portion of the pathname, while basename is used to return the filename of the pathname.  For example, if you have a file /home/test/ABC.txt, then if you type ‘dirname /home/test/ABC.txt’, it would simply return /home/test/.  If you type ‘basename /home/test/ABC.txt’ it would simply return ABC.txt.

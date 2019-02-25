@@ -1,0 +1,86 @@
+1.	Define Unix Operating system in two or three sentences
+Unix/Linux is an operating system. An operating system is a set of
+systems software programs that makes a computer system functional.
+An OS makes the computer system usable. Unix/Linux is a very large 
+set of system software programs written in C and assembly.
+Unix/Linux is a multitasking, multiprocessing, multiuser operating system.
+Multiprogramming - multiple users + multiple tasks == multiple pgms.
+multiplexing
+
+2.	What is a Unix utility program. List three Unix command names.
+Unix/Linux utilities are programs (cmds) available in the system for
+your use. They are programs available in /etc/ /bin /usr/bin /sbin 
+directories. Directories are files that contain other files/directories
+in them. (Same as folders in other Operating systems)
+
+3.	What is the shell ? List three features of a shell.
+Shell is the interface to the UNIX system. Unix/Linux shells are C shell, Korn shell, and Bourne shell.
+
+4.	Define what is meant by home directory. In Linux how will you find out what your home directory is ?
+Hope directory is the folder you are in. You can do cd to change your directory. To find out what your home directory is, you say pwd (stands for print working directory.
+
+5.	Give one example usage of the following commands using your linux system
+ie Execute the commands, understand it, give a sample output ..
+(ie brief output if the command output is large) and explain.
+tty
+uname
+echo
+
+
+tty: 
+This Unix command, displays to standard output (e.g monitor ) the name of the terminal
+connected to standard input (e.g keyboard).
+Sample output after executing the command ''tty'':
+
+$ tty , outputs:
+
+/dev/pts/10
+
+The entries of the systems terminals exists inside the /dev/pts .
+So the current connected terminal is '30'
+
+uname:
+This unix commands , shows the systems information . By running this command without any
+options , it shows the kernel name. By running it with the '-a' option it displays all the
+information
+Sample output after executing the command ''uname''
+
+$ uname , outputs:
+
+Linux
+
+We can see that it shows the kernel name
+While sample output after executing the command ''uname -a''
+We can see that it shows all the system information in the following order: kernel name, network node hostname, kernel release , kernel version , machine hardware name, processor type, hardware platform and operating system.
+
+$ uname -a , outputs:
+
+Linux mylaptop-Inspiron-3543 3.13.0-52-generic #86+bdw1-Ubuntu SMP Mon May 4 06:36:39 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+
+
+Echo:
+This Unix command , displays a line of text . For example the command:
+echo “Display a line” , displays the relevant text back to the user
+There are many practical uses of 'echo' command .
+One example will be to write contents to a file using 'echo'.
+Sample output after executing the command echo “Write a line” > test.txt :
+By viewing the file contents we can see that the echo command successfully written text
+inside it
+$ echo "Display a line" , outputs:
+
+Display a line
+
+
+
+$ echo “Write a line” > test.txt
+
+Writes the string "Write a line" inside the file test.txt
+
+So if we execute , $ cat test.txt it outputs:
+
+"Write a line"
+
+
+
+
+	

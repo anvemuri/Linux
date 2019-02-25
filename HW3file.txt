@@ -1,0 +1,34 @@
+1.Describe Symbolic and Hard link with an example.
+
+Symbolic links are designed to cross the file system boundaries, but hard links are not allowed to cross the file system boundaries, but to link files within the file system, they are confined. Deleting an original file in the hard link does not affect the hard-linked file, and therefore it remains valid, but in the symbolic link, it remains invalid. Also, a hard link is the original file and thus makes use of inode, but the symbolic link is an alternative file of the original file and does not make use of the inode. Creating symbolic link, we use In -s command while the hard link is created by using In command as shown in the example below:
+
+$ ln -s form. File soft link.file
+
+It shows the creation of a symbolic link to the form file
+
+$ ln form. File hardlink.file
+
+It shows the creation of a hard link to the form file
+
+2.Identify the various fields of information ls -l output gives for a file.
+
+The following fields of information are displayed when you type Is -l
+
+Directory or file
+Size 
+Modified date
+Modified time
+File or folder name
+File owner
+Permission 
+
+3.List any two file types available in Linux
+
+Regular files, Directory files
+
+4.What is the difference between 'ls -l' and 'ls -ld' on a directory?
+
+ls -l command is used to list the files and directories within a directory in a list format while ls -ld command is used to display the information in the /tmp directory.
+
+
+

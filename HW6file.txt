@@ -1,0 +1,27 @@
+1. Test commands to:
+a) Check if variable ROOM has integer value of 89
+re='ROOM'
+
+if ! [[ $re =~ $89 ]] ; then
+echo "does not contain integer value 89" >&2; exit 1
+fi
+
+b) To check to see whether /etc/shadow is writable.
+
+ls -l /etc/shadow 
+
+The following command is used to show file permissions of the given file.
+2. Meaning of \ character for grep/egrep.
+
+Backslash (\) is used for matching egrep special characters
+
+3. Write egrep/grep RE for the
+a) Display lines that begin with root
+
+grep ^root /etc/passwd
+The carrot symbol (^) is a special character used to search given pattern at the beginning of lines. For instance, the above command will find the the lines in /etc/passwd which begin with root
+
+b) Display lines that ends with root
+
+grep root$ /etc/passwd
+($) is a special character used to search given pattern at the end of lines? For instance, the above command will find the lines in /etc/passwd which ends with root

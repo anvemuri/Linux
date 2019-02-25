@@ -1,0 +1,24 @@
+1.
+
+a.	cmd:  ln (link)
+	options: -s (symbolic)
+	argument: $HOME/homework /tmp/homework_ln
+
+b.	cmd:  wc (word count)
+	options: -l (count number of lines) , -c (count number of bytes)
+	argument:  /etc/group $HOME/myfile
+
+2.
+
+a. 	“ls –l” stands for long list. It is used to create a list of files, along with permissions, ownership, file size, and timestamp information.
+
+	“ls –F” adds a symbol to identify the file type. A forward slash is used to show directories, an asterisk is for executables, an @ symbol is for symbolic links, equal sign is used for sockets, a % is show for whiteout and a vertical bar is placed after a FIFO.
+
+
+2b.	1.  tail -12 /etc/passwd
+
+	2.  cat /etc/passwd /etc/group
+
+	3.  who
+	
+

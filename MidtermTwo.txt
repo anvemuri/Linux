@@ -1,0 +1,33 @@
+A. Write chmod commands (one for each problem, a full cmd line using chmod) for each of the following
+
+1. to change permissions of a file named project  from 441 to 755 . Do not use numbers
+
+chmod u=r-w,g=r,o=x project && chmod u=rwx,g=rx,o=rx project
+
+2. to set the permissions of a file named homework  to 664. Do not use numbers.
+
+chmod u=rw,g=rw,o=r project
+
+B. How can the following cmd fail. List two reasons.
+
+$ mv  $HOME/project /tmp/project
+
+1. You need sudo
+2. The file couldn’t exist
+
+C. Write a cmd line to cp directory from $HOME/project to $HOME/project.backup
+$HOME/project is a non-empty directory.
+
+cp -R $HOME/project $HOME/project.backup
+
+D. List one difference between symbolic link and hard link.
+
+Symbolic links are designed to cross the file system boundaries, but hard links are not allowed to cross the file system boundaries, but to link files within the file system, they are confined. Deleting an original file in the hard link does not affect the hard-linked file, and therefore it remains valid, but in the symbolic link, it remains invalid. Also, a hard link is the original file and thus makes use of inode, but the symbolic link is an alternative file of the original file and does not make use of the inode. Creating symbolic link, we use In -s command while the hard link is created by using In command as shown in the example below:
+
+$ ln -s form. File soft link.file
+
+It shows the creation of a symbolic link to the form file
+
+$ ln form. File hardlink.file
+
+It shows the creation of a hard link to the form file
